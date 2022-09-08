@@ -1,14 +1,16 @@
-# Scoop Bucket Template
+# Werkzeuge
+
+A bucket for scoop , which stay focused on minority tools .
 
 <!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/Jvcon/werkzeuge/actions/workflows/ci.yml/badge.svg)](https://github.com/Jvcon/werkzeuge/actions/workflows/ci.yml) [![Excavator](https://github.com/Jvcon/werkzeuge/actions/workflows/excavator.yml/badge.svg)](https://github.com/Jvcon/werkzeuge/actions/workflows/excavator.yml)
 
 Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run `scoop bucket add <bucketname> https://github.com/<username>/<bucketname>`. To install, do `scoop install <manifest>`.
+To add this bucket, run `scoop bucket add werkzeuge https://github.com/Jvcon/werkzeuge`. To install, do `scoop install <manifest>`.
 
 How do I contribute new manifests?
 ----------------------------------
@@ -17,6 +19,15 @@ To make a new manifest contribution, please read the [Contributing Guide](https:
 
 ----
 
+### Todo
+- [ ] PDFPatcher
+
+### In Progress
+
+
+### Done ✓
+
+----
 #### To use this template
 
 - Modify the Readme.md and the bin/auto-pr.ps1 files accordingly.
