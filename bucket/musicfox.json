@@ -12,6 +12,12 @@
             "Musicfox"
         ]
     ],
+    "bin": [
+        [
+            "musicfox.exe",
+            "musicfox"
+        ]
+    ]
     "checkver": {
         "url": "https://api.github.com/repos/go-musicfox/go-musicfox/releases",
         "regex": "/releases/tag/(?:v|V)?([\\w.-]+)"
