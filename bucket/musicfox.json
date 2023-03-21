@@ -5,7 +5,7 @@
     "license": "MIT License",
     "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.5/go-musicfox_3.7.5_windows_amd64.zip",
     "hash": "0f032d4893b77e633082eaf876ac2a6a188f25f78ee2b6a3ac8917a5858a246c",
-    "extract_dir": "go-musicfox_$version_windows_amd64",
+    "extract_dir": "go-musicfox_3.7.5_windows_amd64",
     "shortcuts": [
         [
             "musicfox.exe",
@@ -17,6 +17,7 @@
         "regex": "/releases/tag/(?:v|V)?([\\w.-]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v$version/go-musicfox_$version_windows_amd64.zip"
+        "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v$version/go-musicfox_$version_windows_amd64.zip",
+        "extract_dir": "go-musicfox_$version_windows_amd64"
     }
 }
