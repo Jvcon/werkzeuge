@@ -23,9 +23,11 @@
     "notes": "Please run \"scoop uninstall ppink -p\" if error when startup, then re-install.",
     "checkver": {
         "url": "https://github.com/pubpub-zz/ppInk/releases/latest",
-        "re": "/pubpub-zz/ppInk/releases/tag/v(.*?)\""
+        "jsonpath": "$..browser_download_url",
+        "regex": "v([\\d.]+)/ppInk",
+        "reverse": true
     },
     "autoupdate": {
-        "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip"
+        "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$match1/ppInk.zip"
     }
 }
