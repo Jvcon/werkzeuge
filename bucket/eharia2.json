@@ -2,7 +2,7 @@
     "version": "0.0.0.3",
     "description": "Ehanced Aria2.",
     "homepage": "https://github.com/Jvcon/EhAria2",
-    "license": "MIT license",
+    "license": "GPL-2.0 license",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.0.0.3/EhAria2.zip",
