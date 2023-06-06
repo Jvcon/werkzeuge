@@ -1,0 +1,37 @@
+{
+    "version": "0.0.0.3",
+    "description": "Ehanced Aria2.",
+    "homepage": "https://github.com/Jvcon/EhAria2",
+    "license": "MIT license",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.0.0.3/EhAria2.zip",
+            "hash": "A31858551F0CB63B7ECB4E862D88328594A4C10E594152AC067FF21BEDB7BC1D"
+        }
+    },
+    "bin": [
+        "EhAria2Torrent.exe"
+    ],
+    "shortcuts": [
+        [
+            "EhAria2.exe",
+            "EhAria2"
+        ]
+    ],
+    "persist": [
+        "EhAria2.ini",
+        "aria2.conf",
+        "aria2.session"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Jvcon/EhAria2/releases",
+        "regex": "/releases/tag/(?:v|V)?([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Jvcon/EhAria2/releases/download/v$version/EhAria2.zip"
+            }
+        }
+    }
+}
