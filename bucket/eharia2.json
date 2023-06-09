@@ -5,7 +5,7 @@
     "license": "GPL-2.0 license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.0.6/EhAria2v0.0.6.zip",
+            "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.0.6/EhAria2_v0.0.6.zip",
             "hash": "B5CEA9A2A5FAFA2B9DDADBE664AD439F30DA624D8B4F7659117895902525FD31"
         }
     },
