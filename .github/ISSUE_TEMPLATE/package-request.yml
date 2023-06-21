@@ -14,12 +14,12 @@ body:
     label: Criteria
     description: For a package to be acceptable in this bucket, it should be
     options:
-    - label: Criteria 1
-      required: true
-    - label: Criteria 2
-      required: true
-    - label: Criteria 3
-      required: true
+    - label: Open Source
+      required: false
+    - label: Auto Upgradable
+      required: false
+    - label: Persistent
+      required: false
 - type: input
   attributes:
     label: Name
