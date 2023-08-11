@@ -1,0 +1,25 @@
+{
+    "homepage": "https://www.cnblogs.com/pdfpatcher/",
+    "description": "PDFPatcher is a PDF processing tool.",
+    "license": "",
+    "version": "1.0.0.4187",
+    "url": "https://drfs.ctcontents.com/file/12751606/841158564/78439b/PDFPatcher/PDFPatcher.1.0.0.4187.7z",
+    "hash": "85F0F44FAE9761ADF4B6A3C668BFE626FC1B18037638E979ED7371F996C55943",
+    "bin": "PDFPatcher.exe",
+    "shortcuts": [
+        [
+            "PDFPatcher.exe",
+            "PDFPatcher"
+        ]
+    ],
+    "persist": [
+        "PDFPatcher.exe.config"
+    ],
+    "checkver": {
+        "url": "https://www.cnblogs.com/pdfpatcher/",
+        "regex": "([\\w.-]+)</a>"
+    },
+    "autoupdate": {
+        "url": "https://drfs.ctcontents.com/file/12751606/841158564/78439b/PDFPatcher/PDFPatcher.$version.7z"
+    }
+}
