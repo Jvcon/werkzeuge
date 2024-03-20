@@ -1,0 +1,34 @@
+{
+    "version": "1.6.3",
+    "description": "A lightweight note-taking tool with simple calculate funtions.",
+    "homepage": "http://www.haoxg.net/tools.html",
+    "license": "MIT",
+    "url": "http://www.haoxg.net/download/flashpad-1.6.3.zip",
+    "hash": "50895b9930f48780114140566d41b7ee5f03ae2bd20f8ce337b05f67b8aab1de",
+    "pre_install":[
+        "if ((Test-Path \"$dir\\FlashPad-$version\")) { ",
+        "   Move-Item -Path \"$dir\\FlashPad-$version\\FlashPad.exe\" -Destination \"$dir\\FlashPad.exe\" ",
+        "   Remove-Item -Recurse \"$dir\\FlashPad-$version\" ",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\Config.ini\")) {",
+        "   New-Item -Force -Path \"$persist_dir\\Config.ini\" -ItemType file -Value $null ",
+        "}"
+        ],
+    "shortcuts": [
+        [
+            "FlashPad.exe",
+            "FlashPad"
+        ]
+    ],
+    "persist": [
+        "Config.ini",
+        "Data"
+    ],
+    "checkver": {
+        "url": "http://www.haoxg.net/tools.html",
+        "regex": "FlashPad ([\\d.]+) (flashpad.zip)"
+    },
+    "autoupdate": {
+        "url": "http://www.haoxg.net/download/flashpad-$version.zip"
+    }
+}
