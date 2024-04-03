@@ -25,15 +25,7 @@
     },
     "installer": {
         "script": [
-            "if (!(Test-Path \"$persist_dir\\aria2.conf\")) {",
-            "   New-Item -Force -Path \"$persist_dir\\aria2.conf\" -ItemType file -Value $null ",
-            "}",
-            "if (!(Test-Path \"$persist_dir\\aria2.session\")) {",
-            "   New-Item -Force -Path \"$persist_dir\\aria2.session\" -ItemType file -Value $null ",
-            "}",
-            "if (!(Test-Path \"$persist_dir\\EhAria2.ini\")) {",
-            "   New-Item -Force -Path \"$persist_dir\\EhAria2.ini\" -ItemType file -Value $null ",
-            "}"
+            "ForEach ($emptyFile in $manifest.persist | Where-Object { $_ -notlike '*.dat' }) { if (!(Test-Path \"$dir\\$emptyFile\")) { New-Item \"$dir\\$emptyFile\" -ItemType file -ErrorAction SilentlyContinue | Out-Null } }"
         ]
     },
     "bin": [
